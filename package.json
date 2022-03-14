@@ -1,0 +1,29 @@
+{
+  "name": "semanajsexpert-spotify",
+  "version": "1.0.0",
+  "description": "Seja bem vindo(a) à sexta Semana Javascript Expert.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "live-reload": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camillacorreia/semanajsexpert-spotify.git"
+  },
+  "engines": {
+    "node": "17"
+  },
+  "keywords": [],
+  "author": "camillacorreia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camillacorreia/semanajsexpert-spotify/issues"
+  },
+  "homepage": "https://github.com/camillacorreia/semanajsexpert-spotify#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

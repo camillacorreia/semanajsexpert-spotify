@@ -1,6 +1,6 @@
 # Spotify Radio - Semana JS Expert 6.0
 
-Seja bem vindo(a) à sexta Semana Javascript Expert. Este é o código inicial para iniciar nossa jornada.
+Seja bem vindo(a) à sexta Semana Javascript Expert.
 
 Marque esse projeto com uma estrela 🌟
 
@@ -40,10 +40,13 @@ Marque esse projeto com uma estrela 🌟
         - [ ] adicionar um som de efeito novo para a pasta `audios/fx/`
         - [ ] republicar no heroku
 
-### Considerações
-- Tire suas dúvidas sobre os desafios em nossa comunidade, o objetivo é você aprender de forma divertida. Surgiu dúvidas? Pergunte por lá!
-
-- Ao completar qualquer um dos desafios, envie no canal **#desafios** da comunidade no **Discord**
+### Camadas do server
+- Service: tudo que é regra de negócio ou processamento
+- Controller: intermediar a camada de apresentação e a camida de negócio
+- Routes: camada de apresentação
+- Server: responsável por criar o servidor (mas não instancia)
+- Index: instancia o servidor e expõe para a web (lado da infraestrutura)
+- Config: tudo que for estático do projeto
 
 ### Créditos aos áudios usados
 
