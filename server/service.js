@@ -2,7 +2,7 @@ import fs from 'fs';
 import fsPromises from 'fs/promises';
 
 import config from './config.js';
-import { join } from 'path';
+import { join, extname } from 'path';
 
 const {
   dir: {
@@ -17,24 +17,26 @@ export class Service {
 
   async getFileInfo(file) {
     // file = home/index.html
-    const fullFilepath = join(publicDirectory, file);
+    const fullFilePath = join(publicDirectory, file);
 
     //valida se existe, caso não, mostra erro
-    await fsPromises.access(fullFilepath);
-    
-    const fileType = extname(fullFilepath);
+    await fsPromises.access(fullFilePath);
+
+    const fileType = extname(fullFilePath);
     return {
       type: fileType,
-      name: fullFilepath
+      name: fullFilePath
     }
   }
 
   async getFileStream(file) {
     const {
-
+      name,
+      type
     } = await this.getFileInfo(file)
     return {
-      stream: this.createFileStream()
+      stream: this.createFileStream(name),
+      type
     }
   }
 }
