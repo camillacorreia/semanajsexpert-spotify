@@ -1,8 +1,6 @@
 # Spotify Radio - Semana JS Expert 6.0
 
-Seja bem vindo(a) à sexta Semana Javascript Expert.
-
-Marque esse projeto com uma estrela 🌟
+Semana Javascript Expert.
 
 ## Preview
 
